@@ -1,0 +1,228 @@
+/* Main Styles */
+body {
+  background-color: rgb(246, 226, 213);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}
+
+/* Formatting Styles */
+
+.centerit {
+  text-align: center;
+  align-self: center;
+}
+
+.row1topmargin {
+  margin-top: .9rem;
+}
+
+.imgborder {
+  border: solid thin rgb(231, 93, 7);
+}
+
+.darkgreytext {
+  color: rgb(55, 52, 50);
+}
+
+.gradientbackground {
+  background: linear-gradient(rgb(229, 121, 54), rgb(229, 121, 54), rgb(229, 121, 54),rgb(229, 121, 54), white);
+}
+
+.row2topmargin {
+  margin-top: 2rem;
+}
+
+.whitetext {
+  color: white;
+}
+
+.lightorangetext {
+  color:rgb(229, 121, 54);
+}
+
+.sideborderlook {
+  grid-row: 2 / span 1;
+  grid-column: 10 / span 1;
+  width: 50%;
+  border-right:rgb(229, 121, 54) solid medium;
+}
+
+.bottomborderlook {
+  grid-row: 4 / span 1;
+  grid-column: 4 / span 6;
+  border-top: solid thin rgb(229, 121, 54);
+  margin-top: 1rem;
+}
+
+.sideborderlook2 {
+  grid-row: 4 / span 1;
+  grid-column: 10 / span 1;
+  width: 50%;
+  border-right:rgb(229, 121, 54) solid medium;
+  margin-top: -6rem;
+  height: 135%;
+}
+
+/* Item Styles */
+.gridarea {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(12, 1fr);
+  align-content: center;
+}
+
+.soccerkickdiv {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 2;
+}
+.soccerkickimg {
+  width: 65%;
+}
+
+.soccerdiv {
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 6;
+  border: solid .3rem rgb(229, 121, 54);
+  padding: 1rem;
+}
+
+.soccerfield {
+  grid-row: 1 / span 1;
+  grid-column: 10 / span 2;
+}
+.soccerfieldimg {
+  width: 65%;
+}
+
+.row2pagelinksection {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 3;
+}
+
+.buttonlink {
+  border-radius: 20em;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  width: 80%;
+}
+.buttonlink:hover {
+  background: none;
+  background-color: rgb(77, 41, 18);
+  color: white;
+}
+.pagelinkbuttonimg {
+  padding: .15rem;
+}
+
+.formsection {
+  grid-row: 2 / span 1;
+  grid-column: 4 / span 6;
+}
+.gametime {
+  width: 25%;
+  display:inline-block;
+}
+.opponent {
+  width: 20%;
+  display:inline-block;
+}
+.priceperticket {
+  width: 20%;
+  display: inline-block;
+}
+.orderqty {
+  width: 30%;
+  display: inline-block;
+
+}
+.qtyinput {
+  width: 70%;
+  padding: 0;
+  height: .8rem;
+}
+
+.soccerequipmentimg {
+  grid-row: 2 / span 1;
+  grid-column: 11 / span 2;
+  border-bottom: solid thin white;
+  width: 90%;
+  margin: -5rem 6rem 0 auto;
+  display: block;
+}
+
+.row3pagelinksection {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 3;
+  margin-top: -5rem;
+}
+
+.info {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  margin: 2rem auto;
+  width: 40%;
+  text-align: right;
+
+}
+
+.soccerballbyfenceimg {
+  grid-row: 3 / span 1;
+  grid-column: 11 / span 2;
+  margin: -8rem 6rem 0 auto;
+  border-bottom: solid thin white;
+  width: 90%;
+  display: block;
+}
+
+.infoinputtext {
+  margin-top: .15rem;
+  margin-right: 20%;
+  width: 40%;
+  padding: 0;
+}
+
+.submitbutton {
+  width: 60%;
+  padding: .1rem 0;
+  margin-top: .15rem;
+  margin-right: 17%;
+  background: linear-gradient(white, lightgrey);
+  border: solid thin grey;
+  border-radius: 2px;
+}
+
+.creatorname {
+  margin-top: 2rem;
+  margin-right: 3rem;
+  text-align: right;
+}
+
+.row4pagelinksection {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 3;
+  margin-top: -1rem;
+}
+
+.a {
+  grid-row: 4 / span 1;
+  grid-column: 11 / span 2;
+  margin: 2rem 6rem 0 auto;
+  width: 90%;
+  display: block;
+}
+
+.output {
+  grid-row: 4 / span 1;
+  grid-column: 4 / span 6;
+  margin-top: 2rem;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Alana Lambert
+    Homework # 4-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Order Page</title>
+    <link rel="stylesheet" href="styles/mainstyles.css" />
+    <script type="text/javascript" src="scripts/mainscript.js"></script>
+  </head>
+
+  <body>
+    <!-- Grid area begins-->
+    <div class="gridarea">
+      <!-- Row 1 -->
+      <div class="soccerkickdiv centerit row1topmargin">
+        <img
+          class="soccerkickimg imgborder"
+          src="images/soccerkick.jpeg"
+          alt="Soccer player kicking soccer ball"
+        />
+      </div>
+      <div class="soccerdiv row1topmargin centerit darkgreytext gradientbackground">
+        <p>SOCCER TICKETS</p>
+      </div>
+      <div class="soccerfield centerit row1topmargin">
+        <img
+          class="soccerfieldimg imgborder"
+          src="images/soccerfield.jpg"
+          alt="Soccer field"
+        />
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row2pagelinksection row2topmargin">
+        <a href="" class="home buttonlink gradientbackground darkgreytext" >
+          <img class="pagelinkbuttonimg" src="images/soccerbutton.png" alt="Soccerball" />
+          Home
+        </a>
+        <a href="" class="photos buttonlink gradientbackground darkgreytext" >
+          <img class="pagelinkbuttonimg" src="images/soccerbutton.png" alt="Soccerball" />
+          Photos
+        </a>
+        <a href="" class="soccerrules buttonlink gradientbackground darkgreytext" >
+          <img class="pagelinkbuttonimg" src="images/soccerbutton.png" alt="Soccerball" />
+          Soccer Rules
+        </a>
+      </div>
+
+      <!--Form Begins-->
+      <form name="soccertickets" class="formsection row2topmargin" method="get" onsubmit="return processForm(this);">
+
+        <div class="gametime ">
+          <p class="centerit">Game time</p>
+          <input type="checkbox" name="march31check" value="no" />
+          <label for="march31price">March 31 6:00pm</label>
+          <br/>
+          <input type="checkbox" name="april1check" value="no" />
+          <label for="april1price">April 1 6:00pm</label>
+          <br/>
+          <input type="checkbox" name="april8check" value="no" />
+          <label for="april8price">April 8 7:00pm</label>
+          <br/>
+          <input type="checkbox" name="april14check" value="no" />
+          <label for="april14price">April 14 6:30pm</label>
+          <br/>
+          <input type="checkbox" name="april18check" value="no" />
+          <label for="april18price">April 18 6:00pm</label>
+          <br/>
+          <input type="checkbox" name="april21check" value="no" />
+          <label for="april21price">April 21 5:00pm</label>
+          <br/>
+          <input type="checkbox" name="april29check" value="no" />
+          <label for="april29price">April 29 7:00pm</label>
+          <br/>
+        </div>
+
+        <div class="opponent ">
+          <p>Opponent</p>
+          Yucan Village
+          <br/>
+          Beach Park
+          <br/>
+          Monarch River
+          <br/>
+          Sands Resort
+          <br/>
+          Harborside
+          <br/>
+          Yucan Village
+          <br/>
+          Sands Resort
+        </div>
+
+        <div class="priceperticket ">
+          <p>Price per ticket</p>
+          $12.50
+          <br/>
+          $10.50
+          <br/>
+          $10.50
+          <br/>
+          $12.50
+          <br/>
+          $11.00
+          <br/>
+          $12.50
+          <br/>
+          $12.50
+        </div>
+
+        <div class="orderqty">
+          <p>Order quantity</p>
+          <label for="march31qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="march31qty" value="1" />
+          <input type="hidden" value="12.50" name="march31price"/>
+
+          <label for="april1qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="april1qty" value="1" />
+          <input type="hidden" value="10.50" name="april1price"/>
+
+          <label for="april8qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="april8qty" value="1" />
+          <input type="hidden" value="10.50" name="april8price"/>
+
+          <label for="april14qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="april14qty" value="1" />
+          <input type="hidden" value="12.50" name="april14price"/>
+
+
+          <label for="april18qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="april18qty" value="1" />
+          <input type="hidden" value="11.00" name="april18price"/>
+
+
+          <label for="april21qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="april21qty" value="1" />
+          <input type="hidden" value="12.50" name="april21price"/>
+
+
+          <label for="april29qty">Qty:</label>
+          <input class="qtyinput" type="number" min="0" max="1000" name="april29qty" value="1" />
+          <input type="hidden" value="12.50" name="april29price"/>
+
+        </div>
+
+        <!-- Row 3 part of form -->
+        <div class="info">
+          <label for="yourname">Your name:</label>
+          <input class="infoinputtext" type="text" name="yourname" value="" required />
+          <br/>
+          <label for="email">Email address:</label>
+          <input class="infoinputtext" type="email" name="emailaddress" value="" required/>
+          <br/>
+          <input class="infoinput submitbutton" type="submit" value="Process my order!"/>
+        </div>
+      <!--Form Ends-->
+      </form>
+
+      <div class="sideborderlook row2topmargin">&nbsp;</div>
+      <img 
+        class="centerit soccerequipmentimg" 
+        src="images/soccerequipment.jpg" 
+        alt="Soccer Equipment"
+      >
+
+      <!-- Row 3 -->
+      <div class="row3pagelinksection">
+        <a href="" class="teamschedule buttonlink gradientbackground darkgreytext" >
+          <img class="pagelinkbuttonimg" src="images/soccerbutton.png" alt="Soccerball" />
+          Team Schedule
+        </a>
+        <a href="" class="getticketsonline buttonlink gradientbackground darkgreytext" >
+          <img class="pagelinkbuttonimg" src="images/soccerbutton.png" alt="Soccerball" />
+          Get tickets online!
+        </a>
+      </div>
+      <img 
+        class="soccerballbyfenceimg" 
+        src="images/soccerballbyfence.jpg" 
+        alt="Soccer ball by fence"
+      />
+
+      <!-- Row 4 -->
+      <div class="row4pagelinksection">
+        <a href="" class="findus buttonlink gradientbackground darkgreytext" >
+          <img class="pagelinkbuttonimg" src="images/soccerbutton.png" alt="Soccerball" />
+          Find us
+        </a>
+      </div>
+      <div class="sideborderlook2 row2topmargin">&nbsp;</div>
+      <div class="bottomborderlook">
+        &nbsp;
+      </div>
+      <div class="output" id="output"></div>
+    </div>
+    <!-- End of grid area-->
+  </body>
+</html>
