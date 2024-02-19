@@ -114,7 +114,7 @@ nav {
     margin: 0 50px;
 }
 
-#university-seals {
+#profile-picture {
     display: inline;
     margin-left: 20%;
 }
@@ -227,10 +227,6 @@ a #technical-documentation-page:hover {
         font-size: .8rem;
         margin: 5px 0;
         padding: 20px 10px;
-    }
-
-    #university-seals {
-        display: block;
     }
 
     .project-tile {
