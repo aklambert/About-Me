@@ -1,0 +1,76 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#263238;
+    margin:  auto;
+    font-size: 150%;
+}
+#page-header {
+    background-color: #e0dede;
+    border-radius: 3px;
+    box-shadow: 10px 10px 10px grey;
+    padding: 10px;
+    border: 2px #597683 solid;
+    border-top-color: #6f93a3;
+    border-left-color: #6f93a3;
+    height: 50px;
+}
+#code-language-tabs{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 800px;  
+    margin: 50px 10px 10px -5px;
+}
+button {
+    margin: 0;
+    margin-left: -6px;
+    background-color:  #628492;
+    border-radius: 3px;
+    padding: 5px 10px;
+    border: 1px #415761 solid;
+    box-shadow: 10px 10px 30px lightgrey;
+    color: white;
+}
+button:hover {
+    box-shadow: 10px 10px 20px grey;
+    background-color: #415761;
+}
+#code-language-buttons {
+    text-align: center;
+}
+.code-content{
+    display: none;
+    align-self: center;
+    margin: 0 auto;
+    float: left;
+    height: 70%;
+}
+
+#output-content {
+    border: 1px gray solid;
+}
+
+.buttonStyle {
+    box-shadow: 10px 10px 20px grey;
+    background-color: #415761;
+}
+.code-text {
+    margin: 20px auto;
+    padding: 0;
+    height: 100vh;
+}
+textarea {
+    resize:vertical;
+    height: 450px;
+    border: 1px #415761 solid;
+    color: black;
+}
+#output-content{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
