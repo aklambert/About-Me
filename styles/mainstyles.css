@@ -114,11 +114,6 @@ nav {
     margin: 0 50px;
 }
 
-#profile-picture {
-    display: inline;
-    margin-left: 20%;
-}
-
 #projects {
     background-color: rgb(235, 247, 253);
     padding: 20px;
@@ -134,8 +129,6 @@ nav {
     box-shadow: 2px 4px 4px grey;
 }
 
-/* TODO change this fitness app marketing page card to be a screen shot of the
-    project*/
 a #fitness-app-marketing-page:hover {
     background-color: #963429;
 }
@@ -143,6 +136,10 @@ a #fitness-app-marketing-page:hover {
 #fitness-app-marketing-page {
     background-color: #e44e3d;
     color: white;
+}
+
+#fitness-journal-img {
+    width: 25%;
 }
 
 #disc-golf-history-page {
