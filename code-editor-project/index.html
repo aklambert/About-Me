@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code Notebook </title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="styles/mainstyles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="user_js_worker.js"></script>
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+        <script src="jquery-ui/jquery-ui.js"></script>
+        
+    </head>
+    <body>
+        <div id="page-header">
+            <h1>Code Notebook</h1>
+            <div id="code-language-buttons">
+                <button class="code-language-buttons" id="html-button">HTML</button>
+                <button class="code-language-buttons" id="css-button">CSS</button>
+                <button class="code-language-buttons" id="javascript-button">Javascript</button>
+                <button class="code-language-buttons" id="output-button">Output</button>
+            </div>
+            <div class="code-text">
+                <textarea class="code-content" id="html" 
+                    placeholder="Type your HTML code here"></textarea>
+
+                <textarea class="code-content" id="css"
+                    placeholder="Type your CSS code here"></textarea>
+
+                <textarea class="code-content" id="javascript"
+                    placeholder="Type your Javascript code here. (Not yet functioning)"
+                ></textarea>
+
+                <iframe title="output" id="output-content" class="code-content"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
